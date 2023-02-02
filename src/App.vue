@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavbarComponent></NavbarComponent>
+  <BelowNavbar></BelowNavbar>
+  <section class="h-[125px] sm:w-full sm:mt-0 mt-4 p-4 text-center text-gray-700">
+    <p class="font-semibold sn:text-3xl text-2xl">Start creating <span class="font-bold text-blue-500">amazing designs</span></p>
+    <p class="mt-4 font-semibold">Use our online editing tool to make outstanding creations. Get the perfect result in just a few clicks!</p>
+  </section>
+  
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+import NavbarComponent from './components/NavbarComponent.vue';
+import BelowNavbar from './components/JustBelowNavbar.vue';
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
