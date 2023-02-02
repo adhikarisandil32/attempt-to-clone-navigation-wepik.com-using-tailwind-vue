@@ -67,7 +67,6 @@
 </script>
 
 <style>
-
     .navigation{
         @apply block h-full py-8 px-4 hover:text-blue-700;
     }
