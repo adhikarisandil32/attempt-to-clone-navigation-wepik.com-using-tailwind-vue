@@ -27,8 +27,7 @@
                         <div class="px-4 w-[250px]">
                           <a href="" class="block rounded-md border border-blue-800 bg-blue-700 px-4 py-2 font-semibold text-white hover:bg-blue-800">See More Templates</a>
                         </div>
-                      </div>
-                      
+                    </div>
                 </li>
                 <li>
                     <a class="navigation" href="#">Create <font-awesome-icon icon="fa-solid fa-chevron-down" /></a>
