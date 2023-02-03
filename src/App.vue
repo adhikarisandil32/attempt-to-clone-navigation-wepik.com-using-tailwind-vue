@@ -5,7 +5,9 @@
     <p class="font-semibold sn:text-3xl text-2xl">Start creating <span class="font-bold text-blue-500">amazing designs</span></p>
     <p class="mt-4 font-semibold">Use our online editing tool to make outstanding creations. Get the perfect result in just a few clicks!</p>
   </section>
-  
+  <section class="h-96">
+    
+  </section>
 </template>
 
 <script setup>
