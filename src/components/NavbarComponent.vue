@@ -6,7 +6,7 @@
             </a>
         </div>
         <!--Block to be displayed when screen is small and menubar is clicked-->
-        <nav class="sm:w-3/5 sm:hidden block w-full absolute top-full left-0 bg-white z-10" v-if="showSmallScreenNavigation">
+        <nav class="sm:w-3/5 sm:hidden block w-full absolute top-full left-0 bg-white border border-blac z-10">
             <ul class="flex text-center font-semibold text-slate-700 flex-col justify-center items-center h-full">
                 <li class="">
                 <a class="block h-full py-2 px-4 hover:text-blue-700" href="#">Templates</a>
@@ -26,7 +26,7 @@
                     </ul>
                     </div>
                     <div class="px-2 w-[250px]">
-                        <a href="#" class="block rounded-md border border-blue-800 bg-blue-700 px-4 py-2 font-semibold text-white hover:bg-blue-800">See More Templates</a>
+                        <a href="#" class="block py-2 font-semibold text-blue-800">See More Templates</a>
                     </div>
                 </div>
                 </li>
