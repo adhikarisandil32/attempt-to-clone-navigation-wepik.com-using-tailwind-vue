@@ -6,10 +6,10 @@
             </a>
         </div>
         <!--Block to be displayed when screen is small and menubar is clicked-->
-        <nav class="sm:w-3/5 sm:hidden block h-[650px] w-full absolute top-full left-0 bg-white z-10 overflow-y-auto" v-if="showSmallScreenNavigation">
+        <nav class="sm:w-3/5 sm:hidden block h-[650px] w-full absolute top-full left-0 bg-white z-10 overflow-y-scroll" v-if="showSmallScreenNavigation">
             <ul>
                 <li class="li-root-nav">
-                    <a class="block w-full py-2 px-4 hover:text-blue-700" href="#">Templates</a>
+                    <a class="block w-full font-bold py-2 px-4 hover:text-blue-700" href="#">Templates</a>
                     <div class="pl-3 w-[350px] bg-white text-left py-0">
                         <div class="flex font-normal">
                             <ul class="w-1/2">
@@ -31,7 +31,7 @@
                     </div>
                 </li>
                 <li class="li-root-nav">
-                    <a class="block w-full py-2 px-4 hover:text-blue-700" href="#">Create</a>
+                    <a class="block w-full font-bold py-2 px-4 hover:text-blue-700" href="#">Create</a>
                     <div class="pl-3 w-[350px] bg-white text-left">
                         <div class="flex font-normal">
                             <ul class="w-1/2">
@@ -67,7 +67,7 @@
                     </div>
                 </li>
                 <li class="li-root-nav">
-                    <a class="block w-full py-2 px-4 hover:text-blue-700" href="#">Features</a>
+                    <a class="block w-full font-bold py-2 px-4 hover:text-blue-700" href="#">Features</a>
                     <div class="w-[200px] bg-white text-center">
                         <div class="font-normal">
                             <ul>
@@ -91,13 +91,13 @@
                     </div>
                 </li>
                 <li>
-                    <a class="block text-center py-2 px-4 hover:text-blue-700" href="#">My Brand</a>
+                    <a class="block font-bold text-center py-2 px-4 hover:text-blue-700" href="#">My Brand</a>
                 </li>
                 <li>
-                    <a class="block text-center py-2 px-4 hover:text-blue-700" href="#">Blog</a>
+                    <a class="block font-bold text-center py-2 px-4 hover:text-blue-700" href="#">Blog</a>
                 </li>
                 <li>
-                    <a class="block text-center py-2 px-4 hover:text-blue-700" href="#">Support Center</a>
+                    <a class="block font-bold text-center py-2 px-4 hover:text-blue-700" href="#">Support Center</a>
                 </li>
             </ul>
         </nav>
