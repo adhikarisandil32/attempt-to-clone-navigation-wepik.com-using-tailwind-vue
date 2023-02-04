@@ -6,7 +6,7 @@
             </a>
         </div>
         <!--Block to be displayed when screen is small and menubar is clicked-->
-        <nav class="sm:w-3/5 sm:hidden block h-[650px] w-full absolute top-full left-0 bg-white z-10 overflow-y-scroll" v-if="showSmallScreenNavigation">
+        <nav class="sm:w-3/5 sm:hidden block h-screen-height pb-4 w-full absolute top-full left-0 bg-white z-10 overflow-auto" v-if="showSmallScreenNavigation">
             <ul>
                 <li class="li-root-nav">
                     <a class="block w-full font-bold py-2 px-4 hover:text-blue-700" href="#">Templates</a>
@@ -221,8 +221,8 @@
                     </div>
                 </div>
             </div>
-            <div class="rounded border-2 border-blue-700 py-2.5 text-blue-700 hover:bg-blue-700 hover:text-white">
-                <a href="#" class="p-4 font-bold"><font-awesome-icon icon="fa-regular fa-user" /> <span
+            <div class="rounded border-2 border-blue-700 py-2.5 sm:text-blue-700 sm:hover:bg-blue-700 sm:hover:text-white sm:bg-white text-white bg-blue-700">
+                <a href="#" class="p-4 font-bold"><font-awesome-icon icon="fa-regular fa-user"/> <span
                         class="hidden sm:inline">Log In</span></a>
             </div>
             <div class="ml-3 sm:hidden">
@@ -241,16 +241,19 @@
 import { ref } from 'vue'
 
 let displayLanguageMenu = ref(false)
-let showSmallScreenNavigation = ref(true)
+let showSmallScreenNavigation = ref(false)
 
 
 </script>
 
 <style>
-.nav-item {
-    @apply block h-full py-8 px-4 hover:text-blue-700;
-}
-.li-root-nav{
-    @apply text-center flex flex-col items-center;
-}
+    .nav-item {
+        @apply block h-full py-8 px-4 hover:text-blue-700;
+    }
+    .li-root-nav{
+        @apply text-center flex flex-col items-center;
+    }
+    .h-screen-height{
+        height: calc(100vh - 96px);
+    }
 </style>
