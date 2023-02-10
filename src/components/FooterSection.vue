@@ -127,7 +127,7 @@
                         </div>
                     </div>
     
-                    <div class="mt-8 px-6 flex justify-between">
+                    <div class="mt-8 px-8 flex justify-between">
                         <div class="w-fit mr-20">
                             <p class="font-bold text-gray-400">
                                 FEATURES
@@ -212,20 +212,69 @@
                 </div>
             </div>
 
-            <!-- <div class="bg-gray-900">
+            <div class="px-4 py-8 bg-gray-900 sm:flex sm:justify-between">
+                <div class="mx-auto sm:mx-0 w-fit">
+                    <div>
+                        <img src="../assets/freepikcompany.svg" alt="freepikcompany">
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Copyright ©2023 Freepik Company S.L. All rights reserved.
+                    </p>
+                </div>
                 <div>
-                    <img src="../assets/freepikcompany.svg" alt="freepikcompany">
+                    <div class="mt-4 w-fit mx-auto relative text-gray-300 border-2 border-gray-300 rounded-md cursor-pointer">
+                        <span
+                            class="block px-4 py-2 hover:bg-white hover:text-black select-none"
+                            @click="showLanguageMenu = !showLanguageMenu"
+                        >
+                            English
+                            <font-awesome-icon icon="fa-solid fa-chevron-up" v-if="showLanguageMenu"/>
+                            <font-awesome-icon icon="fa-solid fa-chevron-down" v-else/>
+                        </span>
+                        <ul
+                            class="absolute bottom-[60px] right-0 bg-white text-gray-600 font-bold rounded-sm"
+                            v-if="showLanguageMenu"
+                        >
+                            <li>
+                                <a href="#" class="block px-4 py-2 w-[120px] hover:text-blue-700">English</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 w-[120px] hover:text-blue-700">Español</a>
+                            </li>
+                            <li class="absolute right-2 top-[65px] text-2xl text-white">
+                                <font-awesome-icon icon="fa-solid fa-caret-down" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div></div> -->
+            <div class="py-4 px-4 bg-gray-800 text-gray-300 text-sm sm:flex sm:justify-between">
+                <span class="block mb-4 w-fit mx-auto sm:mx-0 font-bold">Freepik Company Projects</span>
+                <ul class="flex justify-evenly sm:justify-end">
+                    <li>
+                        <a href="#" class="block py-1 px-2 hover:text-gray-400">Freepik</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1 px-2 hover:text-gray-400">Flaticon</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1 px-2 hover:text-gray-400">Slidesgo</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-1 px-2 hover:text-gray-400">Videvo</a>
+                    </li>
+                </ul>
+            </div>
         </main>
 
     </footer>
 </template>
 
 <script setup>
-
+    import {ref} from 'vue'
+    
+    let showLanguageMenu = ref(false)
 </script>
 
 <style scoped>
