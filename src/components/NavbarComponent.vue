@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full bg-white px-5 flex justify-between flex-row h-24 sticky top-0">
+    <header class="w-full bg-white px-5 flex justify-between flex-row h-24 sticky top-0 z-10 border border-gray-200">
         <div class="w-[150px] sm:w-1/5 flex items-center">
             <a href="#" class="w-full block py-8">
                 <img class="h-[40px] object-left object-cover" src="../assets/logo-wepik.svg">
